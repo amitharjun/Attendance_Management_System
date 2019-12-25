@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/anits_logo"
+            android:src="@drawable/anits_logo"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="30dp">
+
+        </ImageView>
+        <TextView
+            android:layout_below="@id/anits_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANITS\nMANAGEMENT\nSYSTEM"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/heading"
+            >
+        </TextView>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="152dp"
+            android:layout_marginLeft="150dp"
+
+            android:textColor="@color/black"
+            android:text="Login" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
