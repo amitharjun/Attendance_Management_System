@@ -15,7 +15,7 @@
         android:id ="@+id/studentavatar"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="140dp"
         android:layout_marginBottom="100dp"
         android:text="Student"
