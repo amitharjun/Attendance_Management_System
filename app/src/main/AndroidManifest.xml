@@ -10,15 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Student_homepage"
-            android:label="@string/title_activity_student_homepage"
+            android:name=".activities.AdminPage"
+            android:label="@string/title_activity_admin_homepage"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".View_Studentattendance"
+            android:name=".activities.StudentPage"
+            android:label="@string/title_activity_student_homepage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ViewStudentAttendance"
             android:label="@string/title_activity_view__studentattendance"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Faculty_homepage"
+            android:name=".activities.FacultyPage"
             android:label="@string/title_activity_faculty_homepage"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -26,28 +30,37 @@
             android:label="@string/title_activity_view_class"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Login_Admin"
+            android:name=".logins.LoginAdmin"
             android:label="@string/title_activity_login__admin"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Login_Faculty"
+            android:name=".logins.LoginFaculty"
             android:label="@string/title_activity_login__faculty"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Login_Student"
+            android:name=".logins.LoginStudent"
             android:label="@string/title_activity_login__student"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".select_Login" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
         </activity>
+        <activity android:name=".Rolls"></activity>
+        <activity android:name=".activities.GenerateReport"></activity>
+        <activity android:name=".register.RegisterFaculty"></activity>
+        <activity android:name=".register.RegisterStudent"></activity>
+        <activity android:name=".RemoveStudent"></activity>
+        <activity android:name=".RemoveFaculty"></activity>
+        <activity android:name=".fragments.StudentDashboard"/>
+        <activity android:name=".fragments.StudentProfile"/>
+
     </application>
 
 </manifest>

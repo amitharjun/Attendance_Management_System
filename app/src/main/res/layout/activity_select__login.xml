@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +19,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="100dp"
         android:layout_marginLeft="140dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="50dp"
         android:text="Student"
         android:textColor="@color/black"
         android:background="@drawable/student_avatar"
@@ -29,7 +31,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="140dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="50dp"
         android:text="Faculty"
         android:textColor="@color/black"
         android:background="@drawable/teacher_avatar"
@@ -41,7 +43,6 @@
         android:layout_height="100dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="140dp"
-        android:layout_marginBottom="100dp"
         android:text="Admin"
         android:textColor="@color/black"
         android:background="@drawable/admin_avatar"

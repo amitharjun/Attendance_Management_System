@@ -1,33 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login_Admin">
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".logins.LoginAdmin"
+    tools:showIn="@layout/activity_login__admin">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/content_login__admin" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <TextView
+        android:id="@+id/adminheading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:text="Admin login"
+        android:textAllCaps="true"
+        android:textColor="@color/surface_varient" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <TextView
+        android:id="@+id/reghead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adminheading"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#FFF"
+        android:text="Admin ID" />
+
+    <EditText
+        android:id="@+id/admin_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reghead"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#77FFFFFF"
+        android:textColor="#FFF"
+        android:hint="enter your Admin ID"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/pwdhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_id"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFF"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pwdhead"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter your password "
+        android:textColorHint="#77ffffff"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginbutton_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

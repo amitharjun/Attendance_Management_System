@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.android.attendance_management_system.logins.LoginAdmin;
+import com.example.android.attendance_management_system.logins.LoginFaculty;
+import com.example.android.attendance_management_system.logins.LoginStudent;
+
 public class select_Login extends AppCompatActivity implements View.OnClickListener {
     public Button admin, faculty, student;
 
@@ -23,8 +27,6 @@ public class select_Login extends AppCompatActivity implements View.OnClickListe
         faculty.setOnClickListener(this);
         student.setOnClickListener(this);
     }
-
-
             @Override
             public void onClick (View v){
                 switch (v.getId()) {
@@ -42,19 +44,16 @@ public class select_Login extends AppCompatActivity implements View.OnClickListe
 
                 }
             }
-
-
-
     public void studentlogin(){
-        Intent intent=new Intent(this,Login_Student.class);
+        Intent intent=new Intent(this, LoginStudent.class);
         startActivity(intent);
     }
     public void facultylogin(){
-        Intent intent=new Intent(this,Login_Faculty.class);
+        Intent intent=new Intent(this, LoginFaculty.class);
         startActivity(intent);
     }
     public void adminlogin(){
-        Intent intent=new Intent(this,Login_Admin.class);
+        Intent intent=new Intent(this, LoginAdmin.class);
         startActivity(intent);
     }
 }
